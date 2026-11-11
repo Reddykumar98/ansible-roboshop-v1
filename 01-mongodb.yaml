@@ -10,7 +10,7 @@
     package:
       name: mongodb-org
       state: present
-  - name: start and enable mongodb
+  - name: start and enable mongod
     service:
       name: mongod
       state: started
@@ -20,7 +20,7 @@
       path: /etc/mongod.conf
       regexp: '127.0.0.1'
       replace: '0.0.0.0'
-  - name: restart restart mongod
+  - name: restart mongod
     service:
       name: mongod
       state: restarted
