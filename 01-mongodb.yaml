@@ -6,6 +6,9 @@
     copy:
       src: mongo.repo
       dest: /etc/yum.repos.d/mongo.repo
+      owner: root
+      group: root
+      mode: '0644'
 
   # - name: test the inventory variable
   #   debug:
