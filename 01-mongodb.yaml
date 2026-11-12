@@ -10,6 +10,7 @@
   # - name: test the inventory variable
   #   debug:
   #     msg: "{{ app_name }}"
+  
   - name: install mongodb server
     package:
       name: mongodb-org
